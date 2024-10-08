@@ -33,7 +33,7 @@ print()
 print(f'whats the index for the value 39.1? ', list1.index(39.1))
 del list1[0]
 print('after deleting index 0 : ', list1)
-del list1[1::2]
+del list1[0::2]
 print('after deleting every even number :', list1)
 for temperature in list1:
     if temperature == 18.5:
@@ -44,8 +44,8 @@ print()
 last_temp = list1.pop()
 print('the last temperature is: ', last_temp)
 save_list = list1.copy()
-list1.sort()
-print('after sorting the list from lowest to highest: ', list1)
+save_list.sort()
+print('after sorting the list from lowest to highest: ', save_list)
 save_list2 = list1
-list1.sort(reverse=True)
-print('after sorting the list from highest to lowest :', list1)
+save_list2.sort(reverse=True)
+print('after sorting the list from highest to lowest :', save_list2)
